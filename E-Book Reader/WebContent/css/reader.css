@@ -1,0 +1,309 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+input,
+button {
+	border: none;
+	outline: none;
+	background: none;
+}
+
+:root {
+	--nav-title-font-size: 3rem;
+	--nav-title-font-weight: bold;
+	--nav-link-font-weight: 300;
+	--form-label-font-size: 1.2rem;
+	--form-input-background-color: hsl(var(--color-base-hue), 100%, 31%);
+	--form-input-border-color: hsl(var(--color-base-hue), 100%, 50%);
+	--form-input-border-color-light: hsl(var(--color-base-hue), 100%, 80%);
+	--color-btn-primary-background: hsl(var(--color-base-hue), 100%, 83%);
+	--color-btn-primary-background-dark: hsl(var(--color-base-hue), 100%, 73%);
+	--color-btn-primary-text: hsl(var(--color-base-hue), 100%, 20%);
+	--color-btn-primary-text-dark: hsl(var(--color-base-hue), 100%, 10%);
+	--color-btn-border: black;
+	--color-btn-danger-background: hsl(var(--color-danger-hue), 100%, 83%);
+	--color-btn-danger-background-dark: hsl(var(--color-danger-hue), 100%, 73%);
+	--color-btn-danger-text: black;
+	--color-btn-danger-text-dark: black;
+	--color-base-hue: 200;
+	--color-danger-hue-offset: 180;
+	--color-danger-hue: calc(var(--color-base-hue) - var(--color-danger-hue-offset));
+	--color-background-dark: hsl(var(--color-base-hue), 100%, 8%);
+	--color-background-light: hsl(var(--color-base-hue), 100%, 16%);
+	--color-text-light: hsl(var(--color-base-hue), 100%, 87%);
+}
+
+body {
+	background-color: azure;
+}
+
+body p {
+	font-size: 18px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.book-container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    overflow: hidden;
+    max-height: 1000px;
+    overflow:auto
+}
+
+.container-2 {
+	display: flex;
+	max-width: 1200px;
+	margin: 0 auto;
+	align-items: start;
+}
+
+.container-2 .chapter-container {
+	border: 1px solid black;
+}
+
+.container-2 .chapter-container .chapters {
+	padding: 10px;
+}
+
+.hl {
+	background: yellow;
+}
+
+.header-title {
+	font-size: var(--nav-title-font-size);
+	font-weight: var(--nav-title-font-weight);
+	text-decoration: none;
+	color: var(--color-text-light);
+}
+
+.header-nav {
+	display: flex;
+	margin-bottom: 5rem;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-nav ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.header-nav li {
+	font-weight: var(--nav-link-font-weight);
+	padding: 1rem;
+	list-style: none;
+	cursor: pointer;
+	text-decoration: none;
+	color: var(--color-text-light);
+}
+
+.header-nav li a {
+	font-weight: var(--nav-link-font-weight);
+	padding: 1rem;
+	text-decoration: none;
+	color: var(--color-text-light);
+}
+
+.header-nav li a:hover,
+.header-title:hover {
+	color: white;
+}
+
+.form-row {
+	display: flex;
+	margin-bottom: .5rem;
+}
+
+.form-item {
+	display: flex;
+	flex-direction: column;
+	margin-left: 2rem;
+	flex-grow: 1;
+	flex-basis: 0;
+}
+
+.form-item:first-child {
+	margin-left: 0;
+}
+
+.form-item-no-grow {
+	flex-grow: 0;
+}
+
+.form-row-end {
+	justify-content: flex-end;
+}
+
+.form-item > label {
+	font-size: var(--form-label-font-size);
+	margin-bottom: .25rem;
+	margin-left: .25rem;
+}
+
+.form-item input,
+.form-item select {
+	font-family: 'Gotham Rounded';
+	font-size: 1rem;
+	font-weight: normal;
+	height: 2rem;
+	padding: .25rem .5rem;
+	color: var(--color-text-light);
+	border: 1px solid var(--form-input-border-color);
+	border-radius: .25rem;
+	outline: none;
+	background-color: var(--form-input-background-color);
+}
+
+.form-item textarea {
+	font-family: 'Gotham Rounded';
+	font-size: 1rem;
+	font-weight: normal;
+	color: var(--color-text-light);
+	border: 1px solid var(--form-input-border-color);
+	border-radius: .25rem;
+	outline: none;
+	background-color: var(--form-input-background-color);
+}
+
+.form-item select option {
+	background-color: black;
+}
+
+.form-item input:focus,
+.form-item select:focus,
+.form-item textarea:focus {
+	border-color: var(--form-input-border-color-light);
+}
+
+.filepond--root {
+	font-family: 'Gotham Rounded';
+	margin-bottom: 0;
+}
+
+.filepond--panel-root {
+	border: 1px solid var(--form-input-border-color);
+	background-color: var(--form-input-background-color);
+}
+
+.filepond--drop-label {
+	font-size: inherit;
+	color: var(--color-text-light);
+}
+
+.author-row {
+	display: flex;
+	margin-bottom: 1rem;
+	justify-content: space-between;
+}
+
+.author-name {
+	font-size: 1.5rem;
+}
+
+.btn {
+	font-family: 'Gotham Rounded';
+	font-size: 1.2rem;
+	padding: 5px 5px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid var(--color-btn-border);
+	border-radius: .5rem;
+}
+
+.btn-row {
+	display: flex;
+	align-items: flex-start;
+}
+
+.btn-row > * {
+	margin-left: 1rem;
+}
+
+.btn-row > *:first-child {
+	margin-left: 0;
+}
+
+.btn-primary {
+	color: var(--color-btn-primary-text);
+	background-color: var(--color-btn-primary-background);
+}
+
+.btn-primary:hover {
+	color: var(--color-btn-primary-text-dark);
+	background-color: var(--color-btn-primary-background-dark);
+}
+
+.btn-danger {
+	color: var(--color-btn-danger-text);
+	background-color: var(--color-btn-danger-background);
+}
+
+.btn-danger:hover {
+	color: var(--color-btn-danger-text-dark);
+	background-color: var(--color-btn-danger-background-dark);
+}
+
+.toolbar {
+	display: flex;
+	margin: 10px;
+}
+
+.toolbar .toolbar-flex {
+	display: flex;
+	margin: 10px;
+}
+
+.toolbar .sizes {
+	margin: 10px;
+}
+
+.toolbar .font-style {
+	margin: 10px;
+}
+
+.italic-style {
+	font-style: italic;
+}
+
+.bold-style {
+	font-weight: bold;
+}
+
+q:after {
+   content: none;
+}
+q:before {
+   content: none;
+}
+mark{
+	color:inherit
+}
+q{
+	font-size:1.5rem;
+	cursor:pointer;
+	
+}
+.box{
+	padding:5px;
+}

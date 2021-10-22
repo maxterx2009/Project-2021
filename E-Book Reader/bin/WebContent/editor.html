@@ -1,0 +1,84 @@
+
+<html>  
+	<head>
+		<title>Selected Text</title>
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<div></div>
+		<size_5></size_5>
+		<b></b>
+		<div class = "grid-container" style="width: 100%">
+		
+		<select id="books">
+			<option value="" selected default hidden>Books</option>
+		</select>
+		<button id="deletebook">Delete Book</button>
+		<br/>
+		
+		<select id="chapter">
+			<option value="" selected default>Chapters</option>
+		</select>
+		<button id="deletechapter">Delete Chapter</button>
+		<br/>
+		
+		<input id="newbookname" value="Book Name" type="text"/>
+		<input id="newauthor" value = "Author Name"/>
+		<button id="newbook">New Book</button>
+		<br/>
+		
+		<input id="authorname"/>
+		<button id="changeauthor">Change Author</button>
+		<br/>
+		
+		<input id="chaptername"/>
+		<button id="newchapter">New Chapter</button>
+		<br/>
+		<textarea id = "author" style="width:600;height:200px">Please choose a chapter and enter something
+		</textarea>
+		<br><br>
+		<button id = "reset">Reset</button>
+		<select style="width: 150px" id="font_style">
+			<option value="" selected default>Font Style</option>
+			<option value = "Arial">Arial</option>
+			<option value = "Times_New_Roman">Times New Roman</option>
+			<option value = "Lucida_Console">Lucida Console</option> 
+		</select>
+			<select style="width: 120px" id="font_type">
+			<option value="" selected default>Font-type</option>
+			<option value = "bold">Bold</option>
+			<option value = "italic">Italic</option>
+			<option value = "bold_italic">Bold + Italic</option>
+		</select>
+		<select style="width: 75px" id="color">
+			<option value="" selected default>Color</option>
+			<option value = "color_black">Black</option>
+			<option value = "color_red">Red</option>
+			<option value = "color_blue">Blue</option>
+			<option value = "color_green">Green</option>
+		</select>
+		<select style="width: 75px" id="size">
+			<option value="" selected default>size</option>
+			<option value = "size_5">5px</option>
+			<option value = "size_10">10px</option>
+			<option value = "size_20">20px</option>
+			<option value = "size_30">30px</option>
+		</select>
+		<select style="width: 75px" id="align">
+			<option value="" selected default>Align</option>
+			<option value = "align_center">center</option>
+			<option value = "align_left">left</option>
+			<option value = "align_right">right</option>
+		</select>
+			<button id= "footnote_button">Foot Note</button>
+			<button id= "render">Render</button>
+			<button id="save">Save</button>
+		<br>
+		From <input id="from" disabled> – To <input id="to" disabled>
+		<div id = "author-result" style = "width: 600; margin-top: 25px; border: 1px solid black; outline-style: solid; outline-color: coral;" >Test</div>
+		<br>
+		</div>
+	</body>
+	<script src = "//code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src = "js/editor.js"></script>
+</html>
