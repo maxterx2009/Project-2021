@@ -1,11 +1,11 @@
 # Project-2021
 Project for web application for book Reading
 
-# Team 4
-- Nguyen Lam Duy Dat - 14466@student.vgu.edu.vn
-- Vu Viet Hoang - 15041@student.vgu.edu.vn
-- Ngo Minh Thai - 14553@student.vgu.edu.vn
-- Dao Thien Tuoc (Team Leader) - 13471@student.vgu.edu.vn
+# Team 4 - Members
+1. Nguyen Lam Duy Dat - 14466@student.vgu.edu.vn
+2. Vu Viet Hoang - 15041@student.vgu.edu.vn
+3. Ngo Minh Thai - 14553@student.vgu.edu.vn
+4. Dao Thien Tuoc (Team Leader) - 13471@student.vgu.edu.vn
 
 ## File Location
 1. API Calls are stored inside the **/src** folder
@@ -14,11 +14,11 @@ Project for web application for book Reading
 
 ## Installation instruction
 1. Run the 2 file name **table.sql** and **value.sql** script located inside the master respository in your MySQL workbench
-2. To connect your MySQL database to our Web Application you need to modify the MySQLConnUtils.java inside the folder **/src/connection/MySQLConnUtils.java**
-  - Change dbName input to your created Database( in our case is "bookschema" )
-  - Change userName to your database usernam ( in our case is "root" )
-  - Input your own Database password
-  - please make sure your port is correct ( in our case we use Port ":3306" )
+2. To connect your MySQL database to our Web Application you need to modify the MySQLConnUtils.java inside the folder **/src/connection/MySQLConnUtils.java** :
+- Change **dbName** input to your created Database( in our case is "bookschema" )
+- Change **userName** to your database usernam ( in our case is "root" )
+- Input your own Database **password**
+- Please make sure your Port number is correct ( in our case we use Port ":3306" )
 
 ![image](https://user-images.githubusercontent.com/44689087/138422829-262d34d0-8fb7-4f69-9f87-71ba82d31f8e.png)
 
