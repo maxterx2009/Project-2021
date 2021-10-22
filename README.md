@@ -15,10 +15,10 @@ Project for web application for book Reading
 ## Installation instruction
 1. Run the 2 file name **table.sql** and **value.sql** script located inside the master respository in your MySQL workbench
 2. To connect your MySQL database to our Web Application you need to modify the MySQLConnUtils.java inside the folder **/src/connection/MySQLConnUtils.java** :
-- Change **dbName** input to your created Database( in our case is "bookschema" )
-- Change **userName** to your database usernam ( in our case is "root" )
+- Change **dbName** input to your created Database(in our case is "bookschema")
+- Change **userName** to your database username (in our case is "root")
 - Input your own Database **password**
-- Please make sure your Port number is correct ( in our case we use Port ":3306" )
+- Please make sure your Port number is correct (in our case we use Port ":3306")
 
 ![image](https://user-images.githubusercontent.com/44689087/138422829-262d34d0-8fb7-4f69-9f87-71ba82d31f8e.png)
 
