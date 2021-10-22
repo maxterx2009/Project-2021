@@ -18,7 +18,7 @@ Project for web application for book Reading
 - Change **dbName** input to your created Database(in our case is "bookschema")
 - Change **userName** to your database username (in our case is "root")
 - Input your own Database **password**
-- Please make sure your Port number is correct (in our case we use Port ":3306")
+- Please make sure your **Port number** is correct (in our case we use Port ":3306")
 
 ![image](https://user-images.githubusercontent.com/44689087/138422829-262d34d0-8fb7-4f69-9f87-71ba82d31f8e.png)
 
