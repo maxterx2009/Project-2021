@@ -12,6 +12,12 @@ Project for web application for book Reading
 2. Our JS are stored inside the **WebContent/js** folder
 3. Our main HTML are stored inside the **WebContent** folder
 
+## Application required
+- MySQL Workbench 8.0.26
+- MySQL Server 8.0.26
+- Eclipse IDE 2021‑09
+- Apache Tomcat Server 9.0.54
+
 ## Installation instruction
 1. Run the 2 file name **table.sql** and **value.sql** script located inside the master respository in your MySQL workbench
 2. To connect your MySQL database to our Web Application you need to modify the MySQLConnUtils.java inside the folder **/src/connection/MySQLConnUtils.java** :
