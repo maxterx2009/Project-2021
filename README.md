@@ -28,7 +28,7 @@ Project for web application for book Reading
 
 ![image](https://user-images.githubusercontent.com/44689087/138422829-262d34d0-8fb7-4f69-9f87-71ba82d31f8e.png)
 
-3. Run our Editor.html to access the Author Web Application
-4. Run our index.html to access the Interface to select the book to read
+3. Run our **Editor.html** to access the Author Web Application
+4. Run our **Index.html** to access the Reader Web Application
 
 ### P.S If there are any problem or question related to our Project, feel free to contact us via our Student Email(We will contact you ASAP and fix your problems)
